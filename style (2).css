@@ -1,0 +1,134 @@
+/* Estilos globais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #007BFF;
+  margin-top: 50px;
+}
+
+h1 {
+  background-color: #007BFF;
+  border-radius: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.notes-list {
+  color: #007BFF;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.note {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.note h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #007BFF;
+  border-radius: 13px;
+}
+
+.checklist {
+  padding-top: 10px;
+  color: black;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.beautiful-btn {
+  /* Basic button styles */
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  
+  /* Visual design */
+  background-color: #ffffff;  
+  color: #ffffff;;
+  border-radius: 5px;  /* Rounded corners */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
+  transition: all 0.3s ease;  /* Smooth hover effect */
+}
+
+.beautiful-btn:hover {
+  background-color:#007BFF;;;  /* Darker green on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);  /* More prominent shadow */
+}
+
+
+/* Light mode styles (already defined in your code) */
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+
+div.dark-mode{
+  background-color: #222;
+  color: #ddd;    
+}
+
+.container.dark-mode {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1.dark-mode {
+  background-color: #333;
+  color: #eee;
+}
+
+.notes-list.dark-mode {
+  color: #eee;
+}
+
+.note.dark-mode {
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+.note h2.dark-mode {
+  color: #eee;
+}
+
+.checklist.dark-mode {
+  color: #ddd;
+}
+
+
+
+/* Additional style to make button text color adjust based on background */
+.beautiful-btn {
+  color: contrast(var(--background-color));
+}
+
+/* 
+
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  color: black;
+}
