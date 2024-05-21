@@ -13,7 +13,7 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #66e0ad;
+    box-shadow: 0 0 10px red;
     max-width: 400px;
 }
 
@@ -32,7 +32,7 @@ label {
 }
 
 button {
-    background-color: #66e0ad;
+    background-color: red;
     color: white;
     padding: 15px 20px;
     border: none;

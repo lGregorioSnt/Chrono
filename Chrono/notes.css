@@ -13,19 +13,19 @@ body {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px #66e0ad;
+  box-shadow: 0 4px 8px red;
   margin-top: 50px;
 }
 
 h1 {
-  background-color: #66e0ad;
+  background-color: red;
   border-radius: 13px;
   text-align: center;
   color: #ffffff;
 }
 
 .notes-list {
-  color: #66e0ad;
+  color: red;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -41,7 +41,7 @@ h1 {
 .note h2 {
   margin: 0;
   font-size: 18px;
-  color: #66e0ad;
+  color: red;
   border-radius: 13px;
 }
 
@@ -73,7 +73,7 @@ h1 {
 }
 
 .beautiful-btn:hover {
-  background-color:#66e0ad;;;  /* Darker green on hover */
+  background-color:red;;;  /* Darker green on hover */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);  /* More prominent shadow */
 }
 
