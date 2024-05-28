@@ -1,42 +1,137 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Calendario</title>
-    <link rel="stylesheet" href="Calendario.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <script src="Calendario.js" defer></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <p class="current-date"></p>
-        <div class="icons">
-          <span id="prev" class="material-symbols-rounded">chevron_left</span>
-          <span id="next" class="material-symbols-rounded">chevron_right</span>
-        </div>
-      </header>
-      <div class="calendar">
-        <ul class="weeks">
-          <li>Dom</li>
-          <li>Seg</li>
-          <li>Ter</li>
-          <li>Qua</li>
-          <li>Qui</li>
-          <li>Sex</li>
-          <li>Sab</li>
-        </ul>
-        <ul class="days"></ul>
+<head>
+  <meta charset="utf-8">
+  <title>Calendario</title>
+  <link rel="stylesheet" href="Calendario.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <script src="Calendario.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <p class="current-date"></p>
+      <div class="icons">
+        <span id="prev" class="material-symbols-rounded">chevron_left</span>
+        <span id="next" class="material-symbols-rounded">chevron_right</span>
       </div>
+    </header>
+    <div class="calendar">
+      <ul class="weeks">
+        <li>Dom</li>
+        <li>Seg</li>
+        <li>Ter</li>
+        <li>Qua</li>
+        <li>Qui</li>
+        <li>Sex</li>
+        <li>Sab</li>
+      </ul>
+      <ul class="days"></ul>
     </div>
-    <!DOCTYPE html>
-<html>
+  </div>
+  <!-- The button to open the modal -->
+  <button id="openModal">Recentes</button>
+
+  <!-- The modal window -->
+  <div id="modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- Close button -->
+      <span class="close">&times;</span>
+      <!-- Modal content -->
+      <p>Entregar o relatórios dos Noias.
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript to open and close the modal -->
+  <script>
+    // Get the modal, button, and close span elements
+    var modal = document.getElementById("modal");
+    var btn = document.getElementById("openModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+  <!-- CSS to style the modal -->
+  <style>
+    /* The modal window */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <!DOCTYPE html>
+  <html>
+
   <head>
     <title>Reusable Sidebar Example</title>
     <link rel="stylesheet" href="V.css">
   </head>
+
   <body>
     <div id="sidebar">
       <div id="sidebar">
@@ -45,7 +140,7 @@
           <span></span>
           <span></span>
         </div>
-        <ul id="sidebar-menu"> 
+        <ul id="sidebar-menu">
           <h2>Navegação</h2>
           <ul id="sidebar-menu">
             <li><a href="Notes.html">Notas</a></li>
@@ -53,17 +148,17 @@
             <li><a href="Calendario.html">Calendario</a></li>
             <li><a href="notf.html">Notificações</a></li>
             <li><a href="Config.html">Configurações</a></li>
-         
-          </div>
-         
+
       </div>
-  
-       
+
+    </div>
+
+
     </div>
 
     <!-- Adicionei um script para abrir a janela pop-up quando o botão for clicado -->
     <script>
-      document.getElementById('contact-btn').addEventListener('click', function() {
+      document.getElementById('contact-btn').addEventListener('click', function () {
         document.getElementById('contact-popup').style.display = 'block';
       });
     </script>
@@ -72,31 +167,24 @@
 
     <script src="v.js"></script>
   </body>
-</html>
 
-    
-  </body>
- <button id="myBtn">Recentes</button>
-
- <div id="myModal" class="modal">
- 
-   <div class="modal-content">
-     <span class="close">&times;</span>
-     <p>Entregar o relatório dos noias.</p>
-   <a href="./Notes.html"></a>
-      Ir para Notas
-     </a>
-   </div>
- <script>
- function toggleSidebar() {
-  const sidebar = document.getElementById('sidebar')
-  sidebar.classList.toggle('collapsed')
- }
-
- document.getElementById('sidebar-toggle').addEventListener('click', toggleSidebar);
-
- screenTop
+  </html>
 
 
- </script>
+</body>
+</a>
+</div>
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar')
+    sidebar.classList.toggle('collapsed')
+  }
+
+  document.getElementById('sidebar-toggle').addEventListener('click', toggleSidebar);
+
+  screenTop
+
+
+</script>
+
 </html>
