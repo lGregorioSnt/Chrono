@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <h1>SEMANA</h1>
+        <button onclick="ircalendario"></button>
 
         <!-- Notas em caixas de texto separadas -->
         <div class="notes-list">
@@ -22,11 +23,13 @@
                 <div class="checklist">
                     <div class="check-item">
                         <input type="checkbox" id="note1-item1">
-                        <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                        <textarea for="note2-item2"></textarea></Checklist>
+                        </Checklist>
                     </div>
                     <div class="check-item">
                         <input type="checkbox" id="note1-item2">
-                        <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                        <textarea for="note2-item2"></textarea></Checklist>
+                        </Checklist>
                     </div>
                 </div>
             </div>
@@ -37,11 +40,13 @@
                 <div class="checklist">
                     <div class="check-item">
                         <input type="checkbox" id="note2-item1">
-                        <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                        <textarea for="note2-item2"></textarea></Checklist>
+                        </Checklist>
                     </div>
                     <div class="check-item">
                         <input type="checkbox" id="note2-item2">
-                        <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                        <textarea for="note2-item2"></textarea></Checklist>
+                        </Checklist>
                     </div>
                 </div>
             </div>
@@ -52,11 +57,13 @@
                     <div class="checklist">
                         <div class="check-item">
                             <input type="checkbox" id="note1-item1">
-                            <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                            <textarea for="note2-item2"></textarea></Checklist>
+                            </Checklist>
                         </div>
                         <div class="check-item">
                             <input type="checkbox" id="note1-item2">
-                            <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                            <textarea for="note2-item2"></textarea></Checklist>
+                            </Checklist>
                         </div>
                     </div>
                 </div>
@@ -67,11 +74,13 @@
                         <div class="checklist">
                             <div class="check-item">
                                 <input type="checkbox" id="note1-item1">
-                                <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                <textarea for="note2-item2"></textarea></Checklist>
+                                </Checklist>
                             </div>
                             <div class="check-item">
                                 <input type="checkbox" id="note1-item2">
-                                <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                <textarea for="note2-item2"></textarea></Checklist>
+                                </Checklist>
                             </div>
                         </div>
                     </div>
@@ -82,11 +91,13 @@
                             <div class="checklist">
                                 <div class="check-item">
                                     <input type="checkbox" id="note1-item1">
-                                    <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                    <textarea for="note2-item2"></textarea></Checklist>
+                                    </Checklist>
                                 </div>
                                 <div class="check-item">
                                     <input type="checkbox" id="note1-item2">
-                                    <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                    <textarea for="note2-item2"></textarea></Checklist>
+                                    </Checklist>
                                 </div>
                             </div>
                         </div>
@@ -97,11 +108,13 @@
                                 <div class="checklist">
                                     <div class="check-item">
                                         <input type="checkbox" id="note1-item1">
-                                        <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                        <textarea for="note2-item2"></textarea></Checklist>
+                                        </Checklist>
                                     </div>
                                     <div class="check-item">
                                         <input type="checkbox" id="note1-item2">
-                                        <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                        <textarea for="note2-item2"></textarea></Checklist>
+                                        </Checklist>
                                     </div>
                                 </div>
                             </div>
@@ -112,67 +125,76 @@
                                     <div class="checklist">
                                         <div class="check-item">
                                             <input type="checkbox" id="note1-item1">
-                                            <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                            <textarea for="note2-item2"></textarea></Checklist>
+                                            </Checklist>
                                         </div>
                                         <div class="check-item">
                                             <input type="checkbox" id="note1-item2">
-                                            <textarea for="note2-item2"></textarea></Checklist></Checklist>
+                                            <textarea for="note2-item2"></textarea></Checklist>
+                                            </Checklist>
                                         </div>
                                     </div>
                                 </div>
 
-            <!-- Você pode adicionar mais notas com checklists conforme necessário -->
-        </div>
-    </div>
-    <script>
-        const toggleButton = document.getElementById('toggle-mode');
-        const bodyElement = document.body;
-        const divElement = document.div;
+                                <!-- Você pode adicionar mais notas com checklists conforme necessário -->
+                            </div>
+                        </div>
+                        <script>
+                            const toggleButton = document.getElementById('toggle-mode');
+                            const bodyElement = document.body;
+                            const divElement = document.div;
 
-        function toggleMode() {
-          bodyElement.classList.toggle('dark-mode');
-        }
+                            function toggleMode() {
+                                bodyElement.classList.toggle('dark-mode');
+                            }
 
-        toggleButton.addEventListener('click', toggleMode);
-    </script>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Reusable Sidebar Example</title>
-    <link rel="stylesheet" href="V.css">
-  </head>
-  <body>
-    <div id="sidebar">
-        <div id="sidebar-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul id="sidebar-menu"> 
-          <h2>Navegação</h2>
-          <ul id="sidebar-menu">
-            <li><a href="Notes.html">Notas</a></li>
-            <li><a href="info.html">Conta</a></li>
-            <li><a href="Calendario.html">Calendario</a></li>
-            <li><a href="notf.html">Notificações</a></li>
-            <li><a href="Config.html">Configurações</a></li>
-         
-          </div>
-         
-      </div>
-  
+                            toggleButton.addEventListener('click', toggleMode);
 
-    <!-- Adicionei um script para abrir a janela pop-up quando o botão for clicado -->
-    <script>
-      document.getElementById('contact-btn').addEventListener('click', function() {
-        document.getElementById('contact-popup').style.display = 'block';
-      });
-    </script>
+                            function ircalendario () {
+                                window.location.href="Calendario.html"
+                            }
+                        </script>
+                        <!DOCTYPE html>
+                        <html>
 
-    <!-- Rest of the page content goes here -->
+                        <head>
+                            <title>Reusable Sidebar Example</title>
+                            <link rel="stylesheet" href="V.css">
+                        </head>
 
-    <script src="v.js"></script>
-  </body>
+                        <body>
+                            <div id="sidebar">
+                                <div id="sidebar-toggle">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul id="sidebar-menu">
+                                    <h2>Navegação</h2>
+                                    <ul id="sidebar-menu">
+                                        <li><a href="Notes.html">Notas</a></li>
+                                        <li><a href="info.html">Conta</a></li>
+                                        <li><a href="Calendario.html">Calendario</a></li>
+                                        <li><a href="notf.html">Notificações</a></li>
+                                        <li><a href="Config.html">Configurações</a></li>
+
+                            </div>
+
+                    </div>
+
+
+                    <!-- Adicionei um script para abrir a janela pop-up quando o botão for clicado -->
+                    <script>
+                        document.getElementById('contact-btn').addEventListener('click', function () {
+                            document.getElementById('contact-popup').style.display = 'block';
+                        });
+                    </script>
+
+                    <!-- Rest of the page content goes here -->
+
+                    <script src="v.js"></script>
+</body>
+
 </html>
 
 </body>
