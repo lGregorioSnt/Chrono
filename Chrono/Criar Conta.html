@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Entry Form</title>
+  <title>Criar Conta</title>
   <link rel="stylesheet" href="Criar Conta.css">
 </head>
 <body>
@@ -21,8 +21,12 @@
       <div class="form-group">
         <label for="confirm-password">Confirmar Senha</label>
         <input type="password" id="confirm-password" name="confirm-password" required>
-        <button style="padding-top: 10px;" onclick="navegar()"> Enviar </button>
+        
       </div>
+      <button style="padding-top: 10px;" onclick="navegar()"> Enviar </button>
+      <p class="no-account-text">
+        <a href="Login.html">Ja possui conta? </a></p>  </form>
+     
   </div>
   <script>
     function navegar () {
